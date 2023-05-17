@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e0f5c15198.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: rgb(43, 40, 40);
+        }
+        .first>h1{
+            text-align: center;
+            font-size: 50px;
+            color: rgba(225, 225, 225, 0.164);
+        }
+        .second>h2{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            margin-top: -80px;
+        }
+        span{
+            color: rgb(228, 172, 15);
+        }
+        .left{
+            color: white;
+            text-align: center;
+            float: left;
+            width: 25%;
+            position: relative;
+            top: 150px;
+        }
+        .left>h3{
+            padding-bottom: 20px;
+        }
+        .icon{
+            width: 100px;
+            float: right;
+            position: relative;
+            top: 150px;
+        }
+        #home{
+            background: rgb(71, 69, 69);
+            border-radius: 100px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px;
+            color: white;
+        }
+        #home:hover{
+            background: rgb(228, 172, 15);
+        }
+        #user{
+            background:rgb(71, 69, 69);
+            border-radius: 100px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px;
+            color: white;
+        }
+        #user:hover{
+            background: rgb(228, 172, 15);
+        }
+        #mail{
+            background: rgb(228, 172, 15);
+            border-radius: 100px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px;
+            color: white;
+        }
+        #mail:hover{
+            background: rgb(71, 69, 69);
+        }
+        #portfolio{
+            background: rgb(71, 69, 69);
+            border-radius: 100px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px;
+            color: white;
+        }
+        #portfolio:hover{
+            background: rgb(228, 172, 15);
+        }
+        #blog{
+            background: rgb(71, 69, 69);
+            border-radius: 100px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px;
+            color: white;
+        }
+        #blog:hover{
+            background: rgb(228, 172, 15);
+        }
+        #facebook{
+            color: white;
+            background: rgb(71, 69, 69);
+            padding: 10px;
+            border-radius: 100px;
+            margin: 5px;
+        }
+        #facebook:hover{
+            background: white;
+        }
+        #twitter{
+            color: white;
+            background: rgb(71, 69, 69);
+            padding: 10px;
+            border-radius: 100px;
+            margin: 5px;
+        }
+        #twitter:hover{
+            background: white;
+        }
+        #youtube{
+            color: white;
+            background: rgb(71, 69, 69);
+            padding: 10px;
+            border-radius: 100px;
+            margin: 5px;
+        }
+        #youtube:hover{
+            background: blue;
+        }
+        #github{
+            color: white;
+            background: rgb(71, 69, 69);
+            padding: 10px;
+            border-radius: 100px;
+            margin: 5px;
+        }
+        #github:hover{
+            background: darkblue;
+        }
+        .left p{
+            padding: 10px;
+        }
+        #name{
+            background: rgb(71, 69, 69);
+            border: none;
+            padding: 10px 30px;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        #email{
+            background: rgb(71, 69, 69);
+            border: none;
+            padding: 10px 30px;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        #subject{
+            background: rgb(71, 69, 69);
+            border: none;
+            padding: 10px 30px;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        #message{
+            background: rgb(71, 69, 69);
+            border: none;
+            border-radius: 10px;
+            margin: 10px;
+            width: 735px;
+            height: 200px;
+        }
+        .right{
+            float: left;
+            width: 66%;
+            padding: 60px;
+            position: relative;
+            top: 100px;
+        }
+        .right a{
+            color: white;
+            text-decoration: none;
+            background: rgb(228, 172, 15);
+            padding: 10px 30px;
+            border-radius: 30px;
+            position: absolute;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .right a:hover{
+            background: rgb(205, 133, 50);
+        }
+        input{
+            color: white;
+        }
+        @media only screen and (max-width:600px){
+            .left, .right{
+                width: 90;
+            }
+            .icon{
+                float: right;
+                width: 10%;
+            }
+            #message{
+                height:auto;
+                width: auto;
+                margin-bottom: 20px;
+            }
+            .left{
+                text-align: center;
+            }
+            .right{
+                text-align: center;
+            }
+            .right a{
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="first">
+            <h1>CONTACT</h1>
+        </div>
+        <div class="second">
+            <h2>GET IN <span>TOUCH</span></h2> 
+        </div> 
+    </div>
+    <div class="left">
+        <h3>DON'T BE SHY !</h3>
+        <p>Feel to get in touch with me, I am always open to discussing new projects,creative ideas or opportunities</p>
+        <div class="email">
+            <i class="fa-solid fa-envelope"></i>
+            MAIL ME: kesenaovesuor@gmail.com
+        </div>  
+        <div class="call">
+            <i class="fa-sharp fa-solid fa-phone"></i>
+            CALL ME: 08127251473
+        </div>
+        <a href="#"><i class="fa-brands fa-facebook-f" id="facebook" title="Facebook.com"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter" id="twitter" title="Twitter.com"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube" id="youtube" title="Youtube.com"></i></a>
+        <a href="#"><i class="fa-brands fa-github" id="github" title="Github.com"></i></a>
+    </div>
+    <div class="right">
+        <div class="info">
+            <input type="text" placeholder="YOUR NAME" id="name">
+            <input type="email" placeholder="YOUR EMAIL" id="email">
+            <input type="text" placeholder="YOUR SUBJECT" id="subject">
+            <textarea type="text" id="message" placeholder="YOUR MESSAGE"></textarea>
+        </div>
+        <a href="#">SEND MESSAGE</a>
+    </div>
+    <div class="icon">
+        <a href="index.html"><i class="fa-solid fa-home" id="home"></i></a>
+        <a href="about_me.html"><i class="fa-solid fa-user" id="user"></i></a>
+        <a href="get_in_touch.html"><i class="fa-solid fa-envelope" id="mail"></i></a>
+        <a href="my_portfolio.html"><i class="fa-solid fa-briefcase" id="portfolio"></i></a>
+        <a href="my_blog.html"><i class="fa-sharp fa-solid fa-comments" id="blog"></i></a>
+    </div>
+</body>
+</html>

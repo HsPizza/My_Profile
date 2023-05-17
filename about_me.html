@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e0f5c15198.js" crossorigin="anonymous"></script>
+    <title>About Me</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: rgb(43, 40, 40);
+        }
+        .first>h1{
+            text-align: center;
+            font-size: 50px;
+            color: rgba(225, 225, 225, 0.164);
+        }
+        .second>h2{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            margin-top: -80px;
+        }
+        .header span{
+            color: rgb(228, 172, 15);
+        }
+        .icon{
+            width: 100px;
+            padding-top: 250px;
+            float: right;
+            position: relative;
+            bottom: 300px;
+        }
+        #home{
+            background: rgb(71, 69, 69);
+            border-radius: 100px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px;
+            color: white;
+        }
+        #home:hover{
+            background: rgb(228, 172, 15);
+        }
+        #user{
+            background:rgb(228, 172, 15);
+            border-radius: 100px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px;
+            color: white;
+        }
+        #user:hover{
+            background: rgb(228, 172, 15);
+        }
+        #mail{
+            background: rgb(71, 69, 69);
+            border-radius: 100px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px;
+            color: white;
+        }
+        #mail:hover{
+            background: rgb(228, 172, 15);
+        }
+        #portfolio{
+            background: rgb(71, 69, 69);
+            border-radius: 100px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px;
+            color: white;
+        }
+        #portfolio:hover{
+            background: rgb(228, 172, 15);
+        }
+        #blog{
+            background: rgb(71, 69, 69);
+            border-radius: 100px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px;
+            color: white;
+        }
+        #blog:hover{
+            background: rgb(228, 172, 15);
+        }
+        .box1{
+            color: antiquewhite;
+            margin: 30px;
+            float: left;
+            width: 20%;
+            position: relative;
+            top: 80px;
+        }
+        .box1 b, h2{
+            font-weight: bolder;
+            color: yellowgreen;
+        }
+        .box1 a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background: rgb(228, 172, 15);
+            padding: 10px 30px;
+            position: absolute;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .box1 a:hover{
+            background: rgb(205, 133, 50);
+        }
+        .box2{
+            color: antiquewhite;
+            margin: 10px;
+            float: left;
+            width: 20%;
+            position: relative;
+            top: 140px;
+        }
+        .box2 b, h2{
+            font-weight: bolder;
+            color: yellowgreen;
+        }
+        .box3{
+            height: 150px;
+            width: 20%;
+            margin: 10px;
+            float: left;
+            border: 1px solid rgb(71, 69, 69);
+            position: relative;
+            top: 90px;
+        }
+        .box3 h1{
+            color: rgb(228, 172, 15);
+            padding: 0px 40px;
+        }
+        .box3 p{
+            padding: 0px 80px;
+            color: white;
+            position: relative;
+            bottom: 30px;
+        }
+        .box4{
+            height: 150px;
+            width: 20%;
+            margin: 10px;
+            float: left;
+            border: 1px solid rgb(71, 69, 69);
+            position: relative;
+            top: 90px;
+        }
+        .box4 h1{
+            color: rgb(228, 172, 15);
+            padding: 0px 40px;
+        }
+        .box4 p{
+            padding: 0px 80px;
+            color: white;
+            position: relative;
+            bottom: 30px;
+        }
+        .box5{
+            height: 150px;
+            width: 20%;
+            margin: 10px;
+            float: left;
+            border: 1px solid rgb(71, 69, 69);
+            position: relative;
+            top: 90px;
+        }
+        .box5 h1{
+            color: rgb(228, 172, 15);
+            padding: 0px 40px;
+        }
+        .box5 p{
+            padding: 0px 80px;
+            color: white;
+            position: relative;
+            bottom: 30px;
+        }
+        .box6{
+            height: 150px;
+            width: 20%;
+            margin: 10px;
+            float: left;
+            border: 1px solid rgb(71, 69, 69);
+            position: relative;
+            top: 90px;
+        }
+        .box6 h1{
+            color: rgb(228, 172, 15);
+            padding: 0px 40px;
+        }
+        .box6 p{
+            padding: 0px 80px;
+            color: white;
+            position: relative;
+            bottom: 30px;
+        }
+        footer{
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            float: left;
+            width: 100%;
+            position: relative;
+            bottom: 90px;
+        }
+        hr{
+            width: 30px;
+            position: relative;
+            right: 110px;
+            bottom: 5px;
+        }
+        @media only screen and (max-width: 600px){
+            .box1, .box2, .box3, .box4, .box5, .box6{
+                float: left;
+                width: 90%;
+                text-align: center;
+            }
+            .box2{
+                padding-bottom: 70px;
+            }
+            .icon{
+                width: 10%;
+                left: 10px;
+                position: relative;
+            }
+            .box1 a{
+                position: relative;
+            }
+        }
+        @media only screen and (min-width: 601px){
+            .box1, .box2, .box3, .box4, .box5, .box6{
+                float: left;
+                width: 20%;
+            }
+            .box2{
+                padding-bottom: 150px;
+            }
+            .icon{
+                width: 10%;
+            }
+            hr{
+                position: absolute;
+            }
+        }
+        @media only screen and (min-width: 1149px){
+            .box1, .box2, .box3, .box4, .box5, .box6{
+                float: left;
+                width: 20%;
+            }
+            .icon{
+                float: right;
+                width: 5%;
+                right: 30px;
+            }
+        }
+        @media only screen and (min-width: 2290px){
+            .icon{
+                width: 4%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="first">
+            <h1>READ ME</h1>
+        </div>
+        <div class="second">
+            <h2>ABOUT <span>ME</span></h2> 
+        </div> 
+    </div>
+    <div class="box1">
+        <h3>PERSONAL INFOS</h3>
+        <p>First Name: <b>Kesena</b></p>
+        <p>Last Name: <b>Ovesuor</b></p>
+        <p>Age: <b>20 Years</b></p>
+        <p>Nationality: <b>Nigerian</b></p>
+        <p>Freelance: <b>Available</b></p>
+        <a href="my_blog.html">Download CV</a>
+    </div>
+    <div class="box2">
+        <p>Address: <b>Lag</b></p>
+        <p>Phone: <b>08127251473</b></p>
+        <p>Email: <b>kesena.ovesuor@icloud.com</b></p>
+        <p>skype: <b>kes.gov</b></p>
+        <p>Languages: <b>French,English</b></p>
+    </div>
+    <div class="box3">
+        <h1>2<sup>+</sup></h1>
+        <hr>
+        <p>YEARS OF<br>EXPERIENCE</p>
+    </div>
+    <div class="box4">
+        <h1>12<sup>+</sup></h1>
+        <hr>
+        <p>COMPLETED<br>PROJECTS</p>
+    </div>
+    <div class="box5">
+        <h1>51<sup>+</sup></h1>
+        <hr>
+        <p>HAPPY<br>CUSTOMERS</p>
+    </div>
+    <div class="box6">
+        <h1>12<sup>+</sup></h1>
+        <hr>
+        <p>AWARDS<br>NIGGIE</p>
+    </div>
+    <div class="icon">
+        <a href="index.html"><i class="fa-solid fa-home" id="home"></i></a>
+        <a href="about_me.html"><i class="fa-solid fa-user" id="user"></i></a>
+        <a href="get_in_touch.html"><i class="fa-solid fa-envelope" id="mail"></i></a>
+        <a href="my_portfolio.html"><i class="fa-solid fa-briefcase" id="portfolio"></i></a>
+        <a href="my_blog.html"><i class="fa-sharp fa-solid fa-comments" id="blog"></i></a>
+    </div>
+    <footer>MY SKILLS</footer>
+</body>
+</html>
